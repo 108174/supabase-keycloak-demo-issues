@@ -1,3 +1,43 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Demo login - Keycloak</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="contain">
+      <ion-card *ngIf="session; else logincard" style="flex: 0 0 auto;" class="ion-padding">
+        <ion-card-header>
+          <ion-card-title>Logged in</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Press the login button to logout ;-)
+        </ion-card-content>
+        <ion-button (click)="signOut()" expand="block" fill="clear" shape="round">
+          Sign Out
+        </ion-button>
+      </ion-card>
+    </div>
+  </ion-content>
 </ion-app>
+
+<ng-template #logincard>
+  <ion-card style="flex: 0 0 auto;" class="ion-padding">
+    <ion-card-header>
+      <ion-card-title>Currently not logged in</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Press the login button to login.
+
+      <br />
+      The credentials are:
+
+      <br /><br />
+      user: jwestra<br />
+      password: 123456
+    </ion-card-content>
+    <ion-button (click)="signIn()" expand="block" fill="clear" shape="round">
+      Sign In
+    </ion-button>
+  </ion-card>
+</ng-template>
