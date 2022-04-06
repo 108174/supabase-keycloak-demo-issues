@@ -15,3 +15,9 @@ Please use these credentials to login:
 All the important code is here:
 
 /src/app/app.component.ts
+
+# keycloak settings
+
+![image](https://user-images.githubusercontent.com/10290865/161970675-c927d172-5bf3-4010-9a20-faa0ab822d11.png)
+
+![image](https://user-images.githubusercontent.com/10290865/161970768-9a959038-17ee-46f3-803f-64f036c92dc9.png)
