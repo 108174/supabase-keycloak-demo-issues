@@ -1,0 +1,7 @@
+{
+  "name": "KeycloakLogin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
